@@ -1,0 +1,26 @@
+<h1>History of Routes</h1>
+
+<table>
+  <tr>
+    <th>Computer Move</th>
+    <th>Player Move</th>
+    <th>Outcome</th>
+  </tr>
+</table>
+
+<tr>
+  <td>
+    <% Round.all.each do |round|%>
+  </td>
+  <td>
+    <%=round.computer_move%>
+  </td>
+  <td>
+    <%=round.player_move%>
+  </td>
+  <td>
+    <%=round.outcome%>
+  </td>
+
+</tr>
+<%end%>
